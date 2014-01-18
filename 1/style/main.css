@@ -15,16 +15,16 @@ form, ol, li,
 .quizContainer {
 	height: 100%;
 }
-.quizContainer ol {
+.quizContainer {
 	position: relative;
-	padding-top: 35px;
+	color: #797979;
 }
 .question {
 	display: none;
 	max-width: 1000px;
 	margin: auto;
-	/*position: absolute;
-	left: 90%;*/
+	padding-top: 35px;
+	color:;
 }
 .question.active {
 	display: list-item;
@@ -39,12 +39,14 @@ form, ol, li,
 a {
 	text-decoration: none;
 	font-weight: bold;
+	color: #2daee1;
 }
 a:hover, a:focus {
 	text-decoration: underline;
+	color: #e41e91;
 }
 .previous, .next {
-	position: fixed;
+	position: absolute;
 	bottom: 50%;
 }
 .previous {
@@ -56,15 +58,16 @@ a:hover, a:focus {
 }
 .submit_btn {
 	display: none;
-	position: fixed;
+	position: absolute;
 	bottom: 50%;
 	right: 20px;
 	background: white;
 	border: 0;
-	color: blue;
+	color: #2daee1;
 	font: 20px/20px bold serif;
 }
 .submit_btn:hover,
 .submit_btn:focus {
 	text-decoration: underline;
+	color: #e41e91;
 }
