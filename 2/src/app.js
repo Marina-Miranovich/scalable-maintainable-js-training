@@ -4,6 +4,15 @@ require.config({
 	'shim': {
 		'underscore': {
 			'exports': '_'
+		},
+		'yepnope': {
+			'exports': 'yepnope'
+		},
+		'modernizr': {
+			'exports': 'Modernizr'
+		},
+		'json2': {
+			'exports': 'json2'
 		}
 	},
 	'paths': {

@@ -1,7 +1,12 @@
-define(['event-bus', 'quiz-module', 'jquery', 'require'], function(EventBus, quiz, $, require) {
+define(['event-bus', 'quiz-module', 'jquery', 'require', 'yepnope', 'modernizr'], function(EventBus, quiz, $, require, yepnope, Modernizr) {
 
 	return {
 		init: function () {
+			yepnope({
+				'test': Modernizr.json,
+				'yep': '',
+				'nope': 'json2'
+			});
 			$('.quizContainer').createQuiz();
 			EventBus.bind('quizFinished', this.loadAnswers.bind(this));
 		},
